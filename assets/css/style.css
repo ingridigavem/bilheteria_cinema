@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Roboto Mono', monospace;
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+}
+
+#principal{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#titulo{
+    font-size: 3rem;
+    margin: 0;
+    padding: 5px;
+}
+
+#formulario, .resultado-vazio, .resultado-impresso{
+    width: 70%;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#formulario p{
+    margin: 10px;
+    padding: 5px;
+}
+
+#quantidade-ingresso-inteira, #quantidade-ingresso-meia, #filmes, #horarios{
+    height: 2rem;
+    width: 25%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+#tela{
+    grid-area: divGrid;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    margin: 5px 0 30px 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+#assentos{
+    background-color: rgba(224, 221, 228, 0.384);
+    display: grid;
+    width: 70%;
+    height: auto;
+    padding: 5px;
+    margin: auto;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'divGrid divGrid divGrid divGrid divGrid';
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 5px solid white;
+    vertical-align: middle;
+}
+
+.assentos{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align: middle;
+    display: inline;
+}
+
+.label-assento{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    border: 2px solid rgb(53, 52, 52);
+    border-radius: 8px;
+    color: rgb(4, 13, 118);
+    vertical-align: middle;
+}
+
+#input-submit{
+    margin: 20px 0;
+    font-size: 2rem;
+    padding: 5px 10px;
+}
+
+.resultado-vazio{
+    width: 50%;
+    height: 20px;  
+}
+
+.resultado-impresso{
+    width: 30%;
+    height: auto;
+    background: rgb(219, 212, 112);
+    color: black;
+    margin: 20px auto;
+    padding: 20px 5px;
+    border: 5px dashed black;
+    border-radius: 5px;
+}
+
+
+/* colocando cor no checkbox por cima */
+input[type=checkbox]::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+ 
+input[type=checkbox]:checked:before {
+    background-color:Green;
+    font-size: 15px;
+}
+

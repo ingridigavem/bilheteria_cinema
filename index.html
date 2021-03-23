@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilheteria Cinema</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section id="principal">
+        <h1 id="titulo">Bem vindo ao Cineplay</h1>
+        <form id="form">
+            <section id="formulario">
+                <p>Escolha o filme:
+                    <select name="filmes" id="filmes">
+                        <option>Filmes</option>
+                        <option value="1">Avengers</option>
+                        <option value="2">Transformers</option>
+                        <option value="3">Justice League</option>
+                        <option value="4">John Wick</option>
+                        <option value="5">Titanic</option>
+                    </select>
+                </p>
+
+                <p>Escolha o horário:
+                    <select name="horarios" id="horarios">
+                        <option>Horários</option>
+                        <option value="1">9:00</option>
+                        <option value="2">12:00</option>
+                        <option value="3">15:00</option>
+                        <option value="4">18:00</option>
+                        <option value="5">21:00</option>
+                    </select>
+                </p>
+                <p>Quantidade Ingressos de entrada inteira: <input type="text" placeholder="Digite a quantidade" name="quantidade-ingresso-inteira" id="quantidade-ingresso-inteira"></p>
+                <p>Quantidade Ingressos de meia entrada: <input type="text" placeholder="Digite a quantidade" name="quantidade-ingresso-meia" id="quantidade-ingresso-meia"></p>
+                <p>Assentos disponíveis:</p>
+            </section> 
+            <section id="assentos">
+                    <div id="tela">TELA</div>
+                    <label class="label-assento">A 01<input type="checkbox" value="A 01" name="assentos" class="assentos"></label>
+                    <label class="label-assento">A 02<input type="checkbox" value="A 02" name="assentos" class="assentos"></label>
+                    <label class="label-assento">A 03<input type="checkbox" value="A 03" name="assentos" class="assentos"></label>
+                    <label class="label-assento">A 04<input type="checkbox" value="A 04" name="assentos" class="assentos"></label>
+                    <label class="label-assento">A 05<input type="checkbox" value="A 05" name="assentos" class="assentos"></label>
+                    <label class="label-assento">B 01<input type="checkbox" value="B 01" name="assentos" class="assentos"></label>
+                    <label class="label-assento">B 02<input type="checkbox" value="B 02" name="assentos" class="assentos"></label>
+                    <label class="label-assento">B 03<input type="checkbox" value="B 03" name="assentos" class="assentos"></label>
+                    <label class="label-assento">B 04<input type="checkbox" value="B 04" name="assentos" class="assentos"></label>
+                    <label class="label-assento">B 05<input type="checkbox" value="B 05" name="assentos" class="assentos"></label>
+                    <label class="label-assento">C 01<input type="checkbox" value="C 01" name="assentos" class="assentos"></label>
+                    <label class="label-assento">C 02<input type="checkbox" value="C 02" name="assentos" class="assentos"></label>
+                    <label class="label-assento">C 03<input type="checkbox" value="C 03" name="assentos" class="assentos"></label>
+                    <label class="label-assento">C 04<input type="checkbox" value="C 04" name="assentos" class="assentos"></label>
+                    <label class="label-assento">C 05<input type="checkbox" value="C 05" name="assentos" class="assentos"></label>
+                    <label class="label-assento">D 01<input type="checkbox" value="D 01" name="assentos" class="assentos"></label>
+                    <label class="label-assento">D 02<input type="checkbox" value="D 02" name="assentos" class="assentos"></label>
+                    <label class="label-assento">D 03<input type="checkbox" value="D 03" name="assentos" class="assentos"></label>
+                    <label class="label-assento">D 04<input type="checkbox" value="D 04" name="assentos" class="assentos"></label>
+                    <label class="label-assento">D 05<input type="checkbox" value="D 05" name="assentos" class="assentos"></label> 
+                    <label class="label-assento">E 01<input type="checkbox" value="E 01" name="assentos" class="assentos"></label>
+                    <label class="label-assento">E 02<input type="checkbox" value="E 02" name="assentos" class="assentos"></label>
+                    <label class="label-assento">E 03<input type="checkbox" value="E 03" name="assentos" class="assentos"></label>
+                    <label class="label-assento">E 04<input type="checkbox" value="E 04" name="assentos" class="assentos"></label>
+                    <label class="label-assento">E 05<input type="checkbox" value="E 05" name="assentos" class="assentos"></label>
+            </section>
+            
+            <input type="submit" id="input-submit" value="Imprimir ingresso">
+        </form>
+
+        <p id="resultado" class="resultado-vazio"></p>
+
+    </section>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
